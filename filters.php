@@ -52,7 +52,7 @@ class filters extends rcube_plugin{
       $this->register_action('plugin.filters-delete', array($this, 'filters_delete'));
       $this->add_texts('localization/', array('filters','nosearchstring'));
       $this->rc->output->add_label('filters');
-      $this->include_script('filters.js');      
+      $this->include_script('filters.js');
     }
     else if ($this->rc->task == 'login'){
       if ($this->autoAddSpamFilterRule)
@@ -105,7 +105,7 @@ class filters extends rcube_plugin{
 		if ($imap->mailbox_exists($saved_filter['destfolder']) && $imap->mailbox_exists($saved_filter['srcfolder']) && $saved_filter['srcfolder']==$open_mbox && $saved_filter['destfolder']!=$saved_filter['srcfolder']){
 		  $saved_filter['searchstring'] = html_entity_decode($saved_filter['searchstring']);
 		  // destfolder#messages#filterpriority#markread
-		  $this->searchstring[ $saved_filter['whatfilter'] ][ $saved_filter['searchstring'] ] = 
+		  $this->searchstring[ $saved_filter['whatfilter'] ][ $saved_filter['searchstring'] ] =
 			$saved_filter['destfolder']."#".$saved_filter['messages']."#".$saved_filter['filterpriority']."#".$saved_filter['markread'];
 		}
 	  }
@@ -145,7 +145,7 @@ class filters extends rcube_plugin{
     }
 
   }
-  
+
 
   function filters_init(){
     $this->add_texts('localization/');
@@ -317,17 +317,17 @@ class filters extends rcube_plugin{
           'class' => 'button mainaction',
           'label' => 'save'
       )))));
-    $out.= html::div(array('id' => 'prefs-title','class' => 'boxtitle'), $this->gettext('storedfilters')).
-      html::div(array('class' => 'uibox listbox scroller','style'=>'margin-top:250px;'),
-        html::div(array('class' => 'boxcontent'), $table2->show() ));
+    $out.= html::div(array('class' => 'box'),
+      html::div(array('id' => 'prefs-title','class' => 'boxtitle'), $this->gettext('storedfilters')).
+      html::div(array('class' => 'boxcontent'), $table2->show()));
 
     $this->rc->output->add_gui_object('filtersform', 'filters-form');
 
-    return $this->rc->output->form_tag(array(
+    return '<style> .contentbox { overflow: auto; } </style>'.$this->rc->output->form_tag(array(
         'id' => 'filters-form',
         'name' => 'filters-form',
         'method' => 'post',
-	'class' => 'propform',
+        'class' => 'contentbox propform',
         'action' => './?_task=settings&_action=plugin.filters-save',
     ), $out);
 
@@ -370,10 +370,10 @@ class filters extends rcube_plugin{
   }
   if (!empty($destination_folder)){
 	// if message as read and need unread message, then exit from function
-	// Если сообщение как прочитанное и нужно непрочитанное сообщение, то выход из функции  
+	// Если сообщение как прочитанное и нужно непрочитанное сообщение, то выход из функции
 	if (!empty($msg_read) && $filter_flag == "unread") return;
 	// if message as unread and need read message, then exit from function
-	// Если сообщение как непрочитанное и нужно прочитанное сообщение, то выход из функции 
+	// Если сообщение как непрочитанное и нужно прочитанное сообщение, то выход из функции
 	if (empty($msg_read) && $filter_flag == "isread") return;
 	  $this->msg_uids[$destination_folder][] = $message->uid;
 	  if (!in_array($destination_folder, $this->destfolder)) $this->destfolder[] = $destination_folder;
@@ -421,7 +421,7 @@ class filters extends rcube_plugin{
     if ($tmp !== FALSE){
       $ret = TRUE;
     }
-    
+
     else{
       if ($this->decodeBase64Msg === TRUE){
         // decode and search BASE64 msg
