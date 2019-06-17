@@ -5,12 +5,14 @@ $labels['filters'] = '分類器';
 $labels['storedfilters'] = '已儲存的規則';
 $labels['whatfilter'] = '搜尋欄位';
 $labels['searchstring'] = '包含';
+$labels['movefrom'] = '移動自';
 $labels['moveto'] = '移動至';
 $labels['from'] = '寄件人';
 $labels['to'] = '收件人';
 $labels['cc'] = '副本收件人';
 $labels['subject'] = '主旨';
 $labels['delete'] = '刪除';
+$labels['filterpriority'] = '不要套用其他規則';
 
 $messages = array();
 $messages['nosearchstring'] = "關鍵字不可以是空的";
@@ -22,5 +24,3 @@ $messages['msg_if_field'] = '如果欄位';
 $messages['msg_contains'] = '包含';
 $messages['msg_move_msg_in'] = '移動郵件';
 $messages['msg_no_stored_filters'] = "沒有已儲存的規則";
-
-?>
