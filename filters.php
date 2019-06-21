@@ -55,6 +55,9 @@ final class filters extends rcube_plugin
                 $this->add_hook('login_after', [$this, 'filters_addMoveSpamRule']);
             }
         }
+
+        // frontend assets
+        $this->include_stylesheet($this->local_skin_path() . '/main.css');
     }
 
     public function storage_init($p)

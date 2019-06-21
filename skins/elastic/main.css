@@ -1,0 +1,3 @@
+.listing.iconized li.filters > a:before {
+  content: "\f0b0"
+}
