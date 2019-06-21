@@ -17,7 +17,7 @@ LESS_FILES=(
 )
 
 JS_FILES=(
-    # ...
+    "js/filters.js"
 )
 
 PATH=${PROJECT_ROOT}/node_modules/.bin:${PATH}

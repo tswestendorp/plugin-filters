@@ -49,7 +49,7 @@ final class filters extends rcube_plugin
             $this->register_action('plugin.filters-delete', [$this, 'filters_delete']);
             $this->add_texts('locales', ['filters', 'nosearchstring']);
             $this->rc->output->add_label('filters');
-            $this->include_script('filters.js');
+            $this->include_script('js/filters.min.js');
         } elseif ($this->rc->task == 'login') {
             if ($this->autoAddSpamFilterRule) {
                 $this->add_hook('login_after', [$this, 'filters_addMoveSpamRule']);
