@@ -1,6 +1,6 @@
 <?php
 
-$labels = array();
+$labels = [];
 $labels['filters'] = 'Filtri';
 $labels['storedfilters'] = 'Filtri impostati';
 $labels['whatfilter'] = 'Filtrare';
@@ -12,7 +12,7 @@ $labels['cc'] = 'CC';
 $labels['subject'] = 'Oggetto';
 $labels['delete'] = 'Cancella';
 
-$messages = array();
+$messages = [];
 $messages['nosearchstring'] = "Il campo 'Contiene' non può essere vuoto.";
 $messages['successfullysaved'] = "Il filtro è stato salvato con successo.";
 $messages['unsuccessfullysaved'] = "Errore nel salvataggio del filtro.";
@@ -22,5 +22,3 @@ $messages['msg_if_field'] = 'Se il campo';
 $messages['msg_contains'] = 'contiene';
 $messages['msg_move_msg_in'] = 'sposta il messaggio in';
 $messages['msg_no_stored_filters'] = 'Non è stato impostato alcun filtro';
-
-?>

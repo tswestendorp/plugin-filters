@@ -1,6 +1,6 @@
 <?php
 
-$labels = array();
+$labels = [];
 $labels['filters'] = 'Filters';
 $labels['storedfilters'] = 'Stored filters';
 $labels['whatfilter'] = 'Filter';
@@ -14,7 +14,7 @@ $labels['subject'] = 'Subject';
 $labels['delete'] = 'Delete';
 $labels['filterpriority'] = 'Do not apply other rules';
 
-$messages = array();
+$messages = [];
 $messages['nosearchstring'] = "The field 'Contains' cannot be empty.";
 $messages['successfullysaved'] = "Filter successfully stored.";
 $messages['unsuccessfullysaved'] = "Error: filter not stored.";
@@ -25,5 +25,3 @@ $messages['msg_contains'] = 'contains';
 $messages['msg_move_msg_in'] = 'move the message to';
 $messages['msg_move_msg_from'] = 'from';
 $messages['msg_no_stored_filters'] = "There aren't filters stored.";
-
-?>

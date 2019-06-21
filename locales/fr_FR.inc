@@ -1,6 +1,6 @@
 <?php
 
-$labels = array();
+$labels = [];
 $labels['filters'] = 'Filtres';
 $labels['storedfilters'] = 'Filtres actifs';
 $labels['whatfilter'] = 'Filtre';
@@ -13,7 +13,7 @@ $labels['subject'] = 'Sujet';
 $labels['delete'] = 'Supprimer';
 $labels['filterpriority'] = 'Ne pas appliquer les autres règles de filtrage';
 
-$messages = array();
+$messages = [];
 $messages['nosearchstring'] = "Le champ 'Contient' ne peut pas être vide.";
 $messages['successfullysaved'] = "Filtre enregistré avec succés.";
 $messages['unsuccessfullysaved'] = "Erreur: filtre non sauvegardé.";
@@ -23,5 +23,3 @@ $messages['msg_if_field'] = 'Si le champ';
 $messages['msg_contains'] = 'contient';
 $messages['msg_move_msg_in'] = 'déplacer le message vers';
 $messages['msg_no_stored_filters'] = "Il n'y a pas de filtres enregistrés.";
-
-?>

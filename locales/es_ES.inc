@@ -4,7 +4,7 @@
  | Author: Yoni - MyRoundcube Plugins www.myroundcube.com
  +-----------------------------------------------------------------------+
  */
-$labels = array();
+$labels = [];
 $labels['filters'] = 'Filtros';
 $labels['storedfilters'] = 'Filtros almacenados';
 $labels['whatfilter'] = 'Filtro';
@@ -16,7 +16,8 @@ $labels['cc'] = 'CC';
 $labels['subject'] = 'Asunto';
 $labels['delete'] = 'Eliminar';
 $labels['filterpriority'] = 'No aplicar otras reglas';
-$messages = array();
+
+$messages = [];
 $messages['nosearchstring'] = "El campo 'Contiene' no puede estar vacío.";
 $messages['successfullysaved'] = "Filtro almacenado éxitosamente.";
 $messages['unsuccessfullysaved'] = "Error: filtro no almacenado.";
@@ -26,5 +27,3 @@ $messages['msg_if_field'] = 'Si el campo';
 $messages['msg_contains'] = 'contiene';
 $messages['msg_move_msg_in'] = 'mover mensaje a';
 $messages['msg_no_stored_filters'] = "No hay filtros almacenados.";
-
-?>

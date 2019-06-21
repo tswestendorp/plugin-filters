@@ -1,5 +1,6 @@
 <?php
-$labels = array();
+
+$labels = [];
 $labels['filters'] = 'Filtre';
 $labels['storedfilters'] = 'Filtre salvate';
 $labels['whatfilter'] = 'Filtru';
@@ -11,7 +12,7 @@ $labels['cc'] = 'CC';
 $labels['subject'] = 'Subiect';
 $labels['delete'] = 'Sterge';
 
-$messages = array();
+$messages = [];
 $messages['nosearchstring'] = "Campul 'Contine' nu poate fi gol.";
 $messages['successfullysaved'] = "Filtru salvat cu succes.";
 $messages['unsuccessfullysaved'] = "Eroare: Filtrul nu poate fi salvat.";
@@ -21,4 +22,3 @@ $messages['msg_if_field'] = 'Daca campul';
 $messages['msg_contains'] = 'contine';
 $messages['msg_move_msg_in'] = 'muta mesajul in';
 $messages['msg_no_stored_filters'] = "Nici un filtru salvat.";
-?>

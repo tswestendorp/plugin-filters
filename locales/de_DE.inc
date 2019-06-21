@@ -1,6 +1,6 @@
 <?php
 
-$labels = array();
+$labels = [];
 $labels['filters'] = 'Filter';
 $labels['storedfilters'] = 'Gespeicherte Filter';
 $labels['whatfilter'] = 'Filter';
@@ -12,7 +12,7 @@ $labels['cc'] = 'CC';
 $labels['subject'] = 'Betreff';
 $labels['delete'] = 'Löschen';
 
-$messages = array();
+$messages = [];
 $messages['nosearchstring'] = "Das Feld 'Enthält' darf nicht leer sein.";
 $messages['successfullysaved'] = "Filter erfolgreich gespeichert.";
 $messages['unsuccessfullysaved'] = "Fehler: Filter nicht gespeichert.";
@@ -22,5 +22,3 @@ $messages['msg_if_field'] = 'Wenn das Feld';
 $messages['msg_contains'] = 'den Inhalt';
 $messages['msg_move_msg_in'] = 'aufweist, dann verschiebe die Nachricht in den Ordner';
 $messages['msg_no_stored_filters'] = "Keine gespeicherten Filter.";
-
-?>

@@ -1,5 +1,6 @@
 <?php
-$labels = array();
+
+$labels = [];
 $labels['filters'] = 'フィルター';
 $labels['storedfilters'] = 'Stored filters';
 $labels['whatfilter'] = '条件';
@@ -11,7 +12,8 @@ $labels['cc'] = 'Cc';
 $labels['subject'] = 'Subject';
 $labels['delete'] = 'Delete';
 $labels['filterpriority'] = '他のルールを適用しない';
-$messages = array();
+
+$messages = [];
 $messages['nosearchstring'] = "'含まれる文字列' を空欄にする事は出来ません。";
 $messages['successfullysaved'] = "フィルタを保存しました。";
 $messages['unsuccessfullysaved'] = "エラー: フィルタを保存できませんでした。";
@@ -21,4 +23,3 @@ $messages['msg_if_field'] = ' ';
 $messages['msg_contains'] = 'に';
 $messages['msg_move_msg_in'] = 'が含まれる場合、次のフォルダーに移動します。';
 $messages['msg_no_stored_filters'] = "現在、フィルターは設定されていません。";
-?>

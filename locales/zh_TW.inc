@@ -1,6 +1,6 @@
 <?php
 
-$labels = array();
+$labels = [];
 $labels['filters'] = '分類器';
 $labels['storedfilters'] = '已儲存的規則';
 $labels['whatfilter'] = '搜尋欄位';
@@ -14,7 +14,7 @@ $labels['subject'] = '主旨';
 $labels['delete'] = '刪除';
 $labels['filterpriority'] = '不要套用其他規則';
 
-$messages = array();
+$messages = [];
 $messages['nosearchstring'] = "關鍵字不可以是空的";
 $messages['successfullysaved'] = "規則儲存成功";
 $messages['unsuccessfullysaved'] = "錯誤:規則未儲存";

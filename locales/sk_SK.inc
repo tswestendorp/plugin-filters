@@ -1,6 +1,6 @@
 <?php
 
-$labels = array();                                
+$labels = [];
 $labels['filters'] = 'Pravidlá';
 $labels['storedfilters'] = 'Uložené pravidlá';
 $labels['whatfilter'] = 'Pravidlo';
@@ -12,7 +12,7 @@ $labels['cc'] = 'Kópia';
 $labels['subject'] = 'Predmet';
 $labels['delete'] = 'Zmazať';
 
-$messages = array();
+$messages = [];
 $messages['nosearchstring'] = "Pole 'Obsahuje' nemôže zostať prázdne.";
 $messages['successfullysaved'] = "Pravidlo bolo uložené.";
 $messages['unsuccessfullysaved'] = "Chyba: pravidlo nebolo uložené.";
@@ -22,5 +22,3 @@ $messages['msg_if_field'] = 'Pokiaľ pole';
 $messages['msg_contains'] = 'obsahuje';
 $messages['msg_move_msg_in'] = 'uložit správu do';
 $messages['msg_no_stored_filters'] = "Nemáte uložené pravidlá.";
-
-?>

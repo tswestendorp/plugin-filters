@@ -1,6 +1,6 @@
 <?php
 
-$labels = array();
+$labels = [];
 $labels['filters'] = 'Фильтры';
 $labels['storedfilters'] = 'Правила';
 $labels['whatfilter'] = 'Фильтр';
@@ -14,7 +14,7 @@ $labels['subject'] = 'Тема';
 $labels['delete'] = 'Удалить';
 $labels['filterpriority'] = 'Не применять другие правила';
 
-$messages = array();
+$messages = [];
 $messages['nosearchstring'] = "Поле 'Содержит' не может быть пустым.";
 $messages['successfullysaved'] = "Правило сохранено.";
 $messages['unsuccessfullysaved'] = "Ошибка: правило не сохранено.";
@@ -25,5 +25,3 @@ $messages['msg_contains'] = 'Содержит';
 $messages['msg_move_msg_in'] = 'Переместить сообщение в';
 $messages['msg_move_msg_from'] = 'из';
 $messages['msg_no_stored_filters'] = "Правила не созданы, нет сохраненных правил.";
-
-?>
