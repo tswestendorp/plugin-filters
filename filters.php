@@ -47,7 +47,7 @@ final class filters extends rcube_plugin
             $this->register_action('plugin.filters', [$this, 'filters_init']);
             $this->register_action('plugin.filters-save', [$this, 'filters_save']);
             $this->register_action('plugin.filters-delete', [$this, 'filters_delete']);
-            $this->add_texts('locales', ['filters', 'nosearchstring']);
+            $this->add_texts('localization/', ['filters', 'nosearchstring']);
             $this->rc->output->add_label('filters');
             $this->include_script('js/filters.min.js');
         } elseif ($this->rc->task == 'login') {
@@ -151,7 +151,7 @@ final class filters extends rcube_plugin
 
     public function filters_init()
     {
-        $this->add_texts('locales');
+        $this->add_texts('localization/');
         $this->register_handler('plugin.body', [$this, 'filters_form']);
         $this->rc->output->set_pagetitle($this->gettext('filters'));
         $this->rc->output->send('plugin');
@@ -161,7 +161,7 @@ final class filters extends rcube_plugin
     {
         $user = $this->rc->user;
 
-        $this->add_texts('locales');
+        $this->add_texts('localization/');
         $this->register_handler('plugin.body', [$this, 'filters_form']);
         $this->rc->output->set_pagetitle($this->gettext('filters'));
 
@@ -199,7 +199,7 @@ final class filters extends rcube_plugin
     {
         $user = $this->rc->user;
 
-        $this->add_texts('locales');
+        $this->add_texts('localization/');
         $this->register_handler('plugin.body', [$this, 'filters_form']);
         $this->rc->output->set_pagetitle($this->gettext('filters'));
 
