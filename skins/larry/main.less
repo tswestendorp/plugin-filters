@@ -1,1 +1,15 @@
 @import "../common";
+
+#settings-sections {
+  .listitem.@{plugin-name} {
+    &.selected a {
+      background-image: url('@{images-path}/settings-icon-selected.png');
+    }
+
+    a {
+      background-image: url('@{images-path}/settings-icon.png');
+      background-size: 20px;
+      background-position: 8px;
+    }
+  }
+}
