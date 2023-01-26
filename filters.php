@@ -108,6 +108,9 @@ final class filters extends rcube_plugin
             if (!isset($saved_filter['filterpriority'])) {
                 $saved_filter['filterpriority'] = 0;
             }
+            if (!isset($saved_filter['markread'])) {
+                $saved_filter['markread'] = '';
+            }
             
             // if saved destination folder exists and current folder is "check folder"
             if (\method_exists($imap, 'mailbox_exists')) {
