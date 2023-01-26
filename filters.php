@@ -87,8 +87,8 @@ final class filters extends rcube_plugin
     public function filters_checkmsg(array $mlist)
     {
         $user = $this->rc->user;
-        if (isset($this->rc->imap) && \method_exists($this->rc->imap, 'get_mailbox_name')) {
-            $imap = $this->rc->imap;
+        if (\method_exists($this->rc->storage, 'get_mailbox_name')) {
+            $imap = $this->rc->storage;
             $open_mbox = $imap->get_mailbox_name();
         } else {
             $imap = $this->rc->storage;
