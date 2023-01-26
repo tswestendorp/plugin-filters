@@ -106,7 +106,7 @@ final class filters extends rcube_plugin
 
         foreach ($arr_prefs as $key => $saved_filter) {
             if (!isset($saved_filter['filterpriority'])) {
-                $saved_filter['filterpriority'] = 0
+                $saved_filter['filterpriority'] = 0;
             }
             
             // if saved destination folder exists and current folder is "check folder"
