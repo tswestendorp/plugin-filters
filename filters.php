@@ -105,7 +105,7 @@ final class filters extends rcube_plugin
         $arr_prefs = $this->rc->config->get('filters', []);
 
         foreach ($arr_prefs as $key => $saved_filter) {
-            if (!isset($saved_filter['filterpriority']) {
+            if (!isset($saved_filter['filterpriority'])) {
                 $saved_filter['filterpriority'] = 0
             }
             
