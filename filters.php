@@ -62,7 +62,7 @@ final class filters extends rcube_plugin
 
     public function storage_init($p)
     {
-        if (!isset($p['fetch_headers']) {
+        if (!isset($p['fetch_headers'])) {
             $p['fetch_headers'] = '';
         }
         if ($add_headers = (array) $this->rc->config->get('spam_headers', [])) {
