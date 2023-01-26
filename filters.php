@@ -102,6 +102,10 @@ final class filters extends rcube_plugin
         $arr_prefs = $this->rc->config->get('filters', []);
 
         foreach ($arr_prefs as $key => $saved_filter) {
+            if (!isset($saved_filter['filterpriority']) {
+                $saved_filter['filterpriority'] = 0
+            }
+            
             // if saved destination folder exists and current folder is "check folder"
             if (\method_exists($imap, 'mailbox_exists')) {
                 if ($imap->mailbox_exists($saved_filter['destfolder']) && $imap->mailbox_exists($saved_filter['srcfolder']) && $saved_filter['srcfolder'] == $open_mbox && $saved_filter['destfolder'] != $saved_filter['srcfolder']) {
